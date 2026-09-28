@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import quizvigilLogo from '../assets/quizvigil-logo.png'
 
 function Register({ onBackToLogin }) {
   const [role, setRole] = useState('student')
@@ -199,7 +200,11 @@ function Register({ onBackToLogin }) {
     <div className="auth-page">
       <div className="auth-card register-card">
         <div className="auth-header">
-          <div className="auth-logo">Q</div>
+        <img
+  src={quizvigilLogo}
+  alt="QuizVigil"
+  className="auth-logo"
+/>
 
           <h1>Create your QuizVigil account</h1>
 

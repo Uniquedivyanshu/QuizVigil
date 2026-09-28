@@ -6,6 +6,7 @@ import FounderDashboard from './pages/FounderDashboard'
 import InstituteAdminDashboard from './pages/InstituteAdminDashboard'
 import TeacherDashboard from './pages/TeacherDashboard'
 import StudentDashboard from './pages/StudentDashboard'
+import quizvigilLogo from './assets/quizvigil-logo.png'
 
 function App() {
   const [showLogin, setShowLogin] = useState(false)
@@ -155,10 +156,14 @@ function App() {
       {/* Navbar */}
       <header className="navbar">
         <div className="nav-container">
-          <div className="logo">
-            <span className="logo-icon">Q</span>
-            <span>QuizVigil</span>
-          </div>
+        <div className="logo">
+  <img
+    src={quizvigilLogo}
+    alt="QuizVigil"
+    className="logo-icon"
+  />
+  <span>QuizVigil</span>
+</div>
 
           <nav className="nav-links">
             <a href="#home">Home</a>
@@ -467,15 +472,17 @@ function App() {
         id="contact"
       >
         <div>
-          <div className="logo">
-            <span className="logo-icon">
-              Q
-            </span>
+        <div className="logo">
+  <img
+    src={quizvigilLogo}
+    alt="QuizVigil"
+    className="logo-icon"
+  />
 
-            <span>
-              QuizVigil
-            </span>
-          </div>
+  <span>
+    QuizVigil
+  </span>
+</div>
 
           <p>
             Smart online assessment with secure quiz monitoring.

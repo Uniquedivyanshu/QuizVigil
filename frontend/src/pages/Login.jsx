@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import quizvigilLogo from '../assets/quizvigil-logo.png'
 
 function Login({ onLogin, onRegister }) {
   const [role, setRole] = useState('student')
@@ -439,7 +440,11 @@ function Login({ onLogin, onRegister }) {
       return (
         <>
           <div className="auth-header">
-            <div className="auth-logo">Q</div>
+          <img
+  src={quizvigilLogo}
+  alt="QuizVigil"
+  className="auth-logo"
+/>
 
             <h1>Forgot Password?</h1>
 
@@ -514,7 +519,11 @@ function Login({ onLogin, onRegister }) {
       return (
         <>
           <div className="auth-header">
-            <div className="auth-logo">Q</div>
+          <img
+  src={quizvigilLogo}
+  alt="QuizVigil"
+  className="auth-logo"
+/>
 
             <h1>Verify Email</h1>
 
@@ -600,7 +609,11 @@ function Login({ onLogin, onRegister }) {
     return (
       <>
         <div className="auth-header">
-          <div className="auth-logo">Q</div>
+        <img
+  src={quizvigilLogo}
+  alt="QuizVigil"
+  className="auth-logo"
+/>
 
           <h1>Create New Password</h1>
 
@@ -700,8 +713,11 @@ function Login({ onLogin, onRegister }) {
     <div className="auth-page">
       <div className="auth-card">
         <div className="auth-header">
-          <div className="auth-logo">Q</div>
-
+        <img
+  src={quizvigilLogo}
+  alt="QuizVigil"
+  className="auth-logo"
+/>
           <h1>Welcome Back</h1>
 
           <p>
